@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", "Fraunces", sans-serif;
+}
+
+/* Media Query */
+/* 592px */
+@media (max-width: 37em) {
+  .section-card-container {
+    /* display: none; */
+  }
+  .card-container {
+    grid-template-columns: 1fr !important;
+    margin: 1rem !important;
+  }
+
+  .card-image {
+    width: 100%;
+    /* height: 100% !important; */
+    object-fit: cover;
+    max-height: 40rem;
+  }
+
+  .card-img-section {
+  }
+}
+
+@media (max-width: 24em) {
+  .card-small-heading {
+    margin-bottom: 1.6rem !important;
+    font-size: 1.4rem !important;
+    letter-spacing: 0.8rem !important;
+  }
+
+  .card-main-heading {
+    font-size: 3rem !important;
+
+    margin-bottom: 1.8rem !important;
+  }
+
+  .card-description {
+    font-size: 1.4rem !important;
+
+    margin-bottom: 2.4rem !important;
+  }
+
+  .price {
+    font-size: 3.2rem !important;
+  }
+
+  .btn {
+    padding: 2rem !important;
+    width: 100%;
+
+    font-size: 1.6rem !important;
+    font-weight: 700;
+  }
+}
+/* Media Query End */
+
+.section-card-container {
+}
+.card-container {
+  max-width: 80rem;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.card-img-section {
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-text-section {
+  background-color: hsl(0, 0%, 100%);
+  padding: 4rem 4rem;
+  color: hsl(212, 21%, 14%);
+}
+.card-small-heading {
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  color: hsl(228, 12%, 48%);
+}
+.card-main-heading {
+  font-family: Fraunces;
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+.card-description {
+  font-size: 1.6rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+
+.price-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.price {
+  font-family: Fraunces;
+  font-size: 4.4rem;
+  color: hsl(158, 36%, 37%);
+}
+.price-small {
+  font-size: 1.6rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.btn {
+  border-style: none;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  padding: 1rem 10rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #054b31;
+}
+
+.btn:active {
+  /* color: hsl(228, 12%, 48%); */
+
+  color: hsl(158, 36%, 37%);
+}
+
+.btn-icon {
+  font-size: 2.4rem;
+  margin-right: 0.4rem;
+}
+.attribution {
+}
